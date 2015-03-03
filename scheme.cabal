@@ -1,0 +1,20 @@
+Name:               scheme
+Version:            0.0.1
+License:            GPL
+Author:             Michael Tolly
+Maintainer:         miketolly@gmail.com
+Build-Type:         Simple
+Cabal-version:      >= 1.8
+Category:           Language
+
+Library
+  Build-Depends:    base, array, hashtables, transformers, text
+                    
+  Exposed-modules:  Language.Scheme.Number
+                    Language.Scheme.Base
+                    Language.Scheme.Prelude
+                    Language.Scheme.Scan
+                    Language.Scheme.Parse
+
+  hs-source-dirs:   src
+  ghc-options:      -Wall
